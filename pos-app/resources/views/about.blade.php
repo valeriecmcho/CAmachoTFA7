@@ -4,13 +4,13 @@
 
 @section('content')
 <div class="page-header">
-    <h1>About CamachoTFA56</h1>
+    <h1>About CamachoTFA7</h1>
     <p>Learn more about our Point-of-Sale system and what makes it great.</p>
 </div>
 
 <div class="card">
     <p style="font-size:1rem; color:#555; line-height:1.7; margin-bottom:1.75rem;">
-        <strong>CamachoTFA56</strong> is a lightweight Point-of-Sale system built with
+        <strong>CamachoTFA7</strong> is a lightweight Point-of-Sale system built with
         <strong>Laravel</strong>. It is designed to help small and medium businesses
         streamline their sales operations, manage customers, and control user access —
         all from a clean, intuitive interface.

@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="card hero">
-    <h2>Welcome to CamachoTFA56</h2>
+    <h2>Welcome to CamachoTFA7</h2>
     <p>
         A simple, fast, and reliable Point-of-Sale system for managing your business —
         track customers, manage user accounts, and process transactions with ease.

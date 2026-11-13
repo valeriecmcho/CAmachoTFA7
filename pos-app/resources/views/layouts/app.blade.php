@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CamachoTFA56 – @yield('title', 'Home')</title>
+    <title>CamachoTFA7 – @yield('title', 'Home')</title>
     <style>
         /* ── Reset & Base ── */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -165,12 +165,77 @@
             margin-top: 3rem;
             border-top: 1px solid #ddd;
         }
+
+        /* ── Flash / Alert ── */
+        .alert {
+            padding: .85rem 1.1rem;
+            border-radius: 8px;
+            margin-bottom: 1.25rem;
+            font-size: .9rem;
+        }
+        .alert-success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .alert-error   { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+        /* ── Form styles ── */
+        .form-group { margin-bottom: 1.25rem; }
+        .form-label {
+            display: block;
+            font-size: .875rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: .4rem;
+        }
+        .form-label .required { color: #e94560; }
+        .form-label .optional { color: #999; font-weight: 400; font-size: .8rem; }
+        .form-control {
+            width: 100%;
+            padding: .55rem .85rem;
+            border: 1.5px solid #d0d3da;
+            border-radius: 7px;
+            font-size: .9rem;
+            color: #333;
+            transition: border-color .2s, box-shadow .2s;
+            background: #fff;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: #e94560;
+            box-shadow: 0 0 0 3px rgba(233,69,96,.12);
+        }
+        .form-control.is-invalid { border-color: #e94560; }
+        .invalid-feedback {
+            display: block;
+            margin-top: .3rem;
+            font-size: .82rem;
+            color: #e94560;
+        }
+        .form-hint {
+            display: block;
+            margin-top: .3rem;
+            font-size: .8rem;
+            color: #888;
+        }
+        .form-actions {
+            display: flex;
+            gap: .75rem;
+            margin-top: 1.75rem;
+        }
+
+        /* ── Avatar thumbnail in table ── */
+        .avatar-thumb {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #e0e3ea;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
 
 <nav>
-    <a class="nav-brand" href="{{ route('home') }}">🛒 CamachoTFA56</a>
+    <a class="nav-brand" href="{{ route('home') }}">🛒 CamachoTFA7</a>
     <div class="nav-links">
         <a href="{{ route('home') }}"      class="{{ request()->routeIs('home')      ? 'active' : '' }}">Home</a>
         <a href="{{ route('about') }}"     class="{{ request()->routeIs('about')     ? 'active' : '' }}">About</a>
@@ -180,11 +245,17 @@
 </nav>
 
 <div class="container">
+    @if (session('success'))
+        <div class="alert alert-success">{{ session('success') }}</div>
+    @endif
+    @if (session('error'))
+        <div class="alert alert-error">{{ session('error') }}</div>
+    @endif
     @yield('content')
 </div>
 
 <footer>
-    &copy; {{ date('Y') }} CamachoTFA56 &mdash; All rights reserved.
+    &copy; {{ date('Y') }} CamachoTFA7 &mdash; All rights reserved.
 </footer>
 
 </body>

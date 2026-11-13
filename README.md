@@ -1,4 +1,4 @@
-# CamachoTFA56 - Point of Sale (POS) Web Application
+# CamachoTFA7 - Point of Sale (POS) Web Application
 
 ![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)
@@ -11,7 +11,7 @@ A lightweight, modern, and responsive **Point-of-Sale (POS) System** developed w
 
 ## 📌 Project Overview
 
-**CamachoTFA56** is designed to streamline retail and service operations for small-to-medium businesses. It demonstrates core Laravel capabilities including MVC architecture, database migrations, model seeders, Eloquent relationships and queries, dynamic Blade layouts, and custom responsive CSS styling.
+**CamachoTFA7** is designed to streamline retail and service operations for small-to-medium businesses. It demonstrates core Laravel capabilities including MVC architecture, database migrations, model seeders, Eloquent relationships and queries, dynamic Blade layouts, and custom responsive CSS styling.
 
 ---
 
@@ -42,7 +42,7 @@ A lightweight, modern, and responsive **Point-of-Sale (POS) System** developed w
 ## 📂 Project Structure
 
 ```text
-CamachoTFA56/
+CamachoTFA7/
 ├── pos-app/                               # Main Application Directory
 │   ├── app/
 │   │   ├── Http/Controllers/
